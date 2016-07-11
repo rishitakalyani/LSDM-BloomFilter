@@ -92,10 +92,10 @@ public class BloomFilterLSDM{
 			int test = h.CheckIfExist(wordHash, keysMap);
 			if(test==1){
 				count++;
-				System.out.print("1");
+				//System.out.print("1");
 			}
-			else
-				System.out.print("0");
+			//else
+				//System.out.print("0");
 		}
 		System.out.println("\r\b\bTotal no. of 1s = "+count);
 		double false_pos=CalculateFP(noOfHashFunc,hashtags.size(), bitArraySize);
