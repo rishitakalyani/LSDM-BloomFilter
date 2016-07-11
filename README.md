@@ -14,9 +14,10 @@ java version 8
 
 #Running guide
 You can run the jar file directly
-
+```
 java -jar BloomFilter.jar ebola.json.gz 1000 8000 2 ebola ebolafever
-
+```
 Or you can run 
-
+```
 ./run.sh ebola.json.gz 1000 8000 2 ebola ebolafever
+```
