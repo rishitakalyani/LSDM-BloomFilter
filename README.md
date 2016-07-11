@@ -4,7 +4,9 @@ This project implements counting 1s by Bloom Filter. It takes the size of input 
 
 #Build-details
 The project is build with:
+````
 java version 8
+````
 
 #Parameters for input stream are as follows:
 1. Path to the compressed input dataset
