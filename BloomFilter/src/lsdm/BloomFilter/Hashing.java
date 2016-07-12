@@ -104,9 +104,11 @@ public class Hashing{
 	}
 	public int CheckIfExist(int[] wordHash, HashMap<String, int[]> keysMap) {
 		int test = 1;
+		int count=0;
 		
 		for(String key : keysMap.keySet()){
-			test=1;
+			if(test==0)
+				test=1;
 			int[] hashKey = keysMap.get(key);
 			
 			for(int i = 0; i<bitArraySize; i++){
@@ -117,10 +119,13 @@ public class Hashing{
 					}
 				
 			}
+			if(test!=0){
+				count++;
+			}
 			//return test;
 			
 		}
-		return test;
+		return count;
 		
 	}
 	
