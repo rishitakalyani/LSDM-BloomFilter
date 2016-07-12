@@ -104,6 +104,7 @@ public class Hashing{
 	}
 	public int CheckIfExist(int[] wordHash, HashMap<String, int[]> keysMap) {
 		int test = 1;
+		
 		for(String key : keysMap.keySet()){
 			test=1;
 			int[] hashKey = keysMap.get(key);

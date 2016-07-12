@@ -4,7 +4,9 @@ This project implements counting 1s by Bloom Filter. It takes the size of input 
 
 #Build-details
 The project is build with:
+````
 java version 8
+````
 
 #Parameters for input stream are as follows:
 1. Path to the compressed input dataset
@@ -15,9 +17,9 @@ java version 8
 #Running guide
 You can run the jar file directly
 ```
-java -jar BloomFilter.jar ebola.json.gz 1000 8000 2 ebola ebolafever
+java -jar BloomFilter.jar ebola.json.gz 1000 8000 ebola ebolafever
 ```
 Or you can run 
 ```
-./run.sh ebola.json.gz 1000 8000 2 ebola ebolafever
+./run.sh ebola.json.gz 1000 8000 ebola ebolafever
 ```
