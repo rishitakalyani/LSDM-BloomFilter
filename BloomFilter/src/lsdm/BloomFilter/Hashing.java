@@ -103,23 +103,23 @@ public class Hashing{
 		
 	}
 	public int CheckIfExist(int[] wordHash, HashMap<String, int[]> keysMap) {
-		
+		int test = 1;
 		for(String key : keysMap.keySet()){
-			int test = 1;
+			test=1;
 			int[] hashKey = keysMap.get(key);
 			
 			for(int i = 0; i<bitArraySize; i++){
 				if(hashKey[i]!=wordHash[i] || wordHash[i]!=hashKey[i]){
 					
 						test=0;
-						return test;
+						break;
 					}
 				
 			}
-			return test;
+			//return test;
 			
 		}
-		return 1;
+		return test;
 		
 	}
 	
